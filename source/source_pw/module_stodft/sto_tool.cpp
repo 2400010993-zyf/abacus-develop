@@ -25,7 +25,7 @@ void check_che_op<FPTYPE, Device>::operator()(const int& nche_in,
     bool change = false;
     const int nk = p_kv->get_nks();
     ModuleBase::Chebyshev<FPTYPE, Device> chetest(nche_in);
-    int ntest0 = 5;
+    const int ntest0 = 5;
     *p_hamilt_sto->emax = try_emax;
     *p_hamilt_sto->emin = try_emin;
     // if (PARAM.inp.nbands > 0)
